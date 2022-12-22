@@ -1,4 +1,4 @@
-function calcular(){
+function calcular1(){
     var nome = document.getElementById('nome').value
     var altura = document.getElementById('altura').value
     var peso = document.getElementById('peso').value
