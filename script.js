@@ -9,7 +9,7 @@ function calcular1(){
         const calculoIMC = (peso / (altura*altura)).toFixed(2);
 
         let cliente = '';
-        if( calculoIMC <18.5 ){
+        if( calculoIMC < 18.5 ){
             // abaixo do peso
            cliente = 'Você está abaixo do peso' 
         } else if(calculoIMC < 25){

@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora - imc</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
-
+        <!-- O javascript sempre tem que ficar em baixo-->
 
         <header>
          <img src="logo-s1xp.png" alt="imagem-logo">
          <div class="linkh">
-             <a href="#">Link da pagina oficial</a>
+             <a href="https://www.programasaudefacil.com.br/calculadora-de-imc" target="_blank">Link da pagina oficial</a>
              
          </div>
         </header>
@@ -40,21 +39,22 @@
 
        
             <h1  class="h1">Calculadora - IMC</h1>
-        <form class="js">
+
+        <form class="js" id="form">
             <div class="input">
-                <label for="nome">Nome:</label> <input type="text" name="nome" class="input" placeholder="Adicione o seu Nome">
+                <label for="nome">Nome:</label> <input type="text" name="nome" class="input" placeholder="Adicione o seu Nome" id="nome">
             </div>
 
             <div class="input">
-                <label for="altura">Altura: <input placeholder="Adicione o seu altura"type="number" name="altura" class="input" ></label>
+                <label for="altura">Altura: <input placeholder="Exemplo: 185" type="number" name="altura" class="input" id="altura" ></label>
             </div>
 
             <div class="input">
                 <label for="peso"> Peso:</label>
-            <input type="number" name="peso" class="input" placeholder="Adicione o seu peso">
+            <input type="number" name="peso" class="input" placeholder="Exemplo: 75" id="peso">
             </div >
-
-            <button type="submit" id="botao" > Calcular</button>
+            
+            <input type="submit" id="botao" value="Calcular">
     
             <p class="p" id="res" >
               Aqui aparecera o seu resultado
@@ -71,9 +71,9 @@
             O IMC é calculado dividindo o peso (em kg) pela altura ao quadrado (em m), de acordo com a seguinte fórmula: IMC = peso / (altura x altura).
 O resultado de IMC é dado em kg/m2.
         </p>
-    
-   
 
+        <script src="novoScript.js"></script>
 </body>
+
 </html>
 <!--https://www.tuasaude.com/calculadora/imc/ site do imc do projeto-->
