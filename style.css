@@ -44,29 +44,25 @@ main{
     margin: 1em;
 }
 
-/*Formulario*/
-.js{
-    margin: auto;
-    flex-direction: column;
-    justify-content: center;
-}
-
 /*Input*/
+/*Estao conectados com o label entao centraliza com o text align e estao em textos  */
 .input{
     border-radius: 10px;
-   margin: .7em auto;
-   text-align: center;
+    margin: .7em auto;
+    text-align: center;
 }
 
+
 /*Botao*/
-#botao{
-    position: relative;
-    left: 50%;
-    top: 50%;
+.botao{
     padding: .7em;
     border-radius: 10px;  
-    align-items: center;
     cursor: pointer;
-    margin: auto;
+    margin: .7em auto;
+}
+.botao:hover{
+    background-color: rgb(59, 59, 59);
+    transition: 2s;
+    color: aliceblue;
 }
 

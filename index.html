@@ -42,36 +42,44 @@
 
         <form class="js" id="form">
             <div class="input">
-                <label for="nome">Nome:</label> <input type="text" name="nome" class="input" placeholder="Adicione o seu Nome" id="nome">
+                <label for="nome">Nome:</label> 
+                <input type="text" id="nome" name="nome" class="input" placeholder="Nome e Sobrenome" >
             </div>
-
+        
             <div class="input">
-                <label for="altura">Altura: <input placeholder="Exemplo: 185" type="number" name="altura" class="input" id="altura" ></label>
+                <label for="altura">Altura: <input placeholder="Exemplo: 185" type="number" name="altura"  id="altura" class="input" ></label>
             </div>
 
             <div class="input">
                 <label for="peso"> Peso:</label>
-            <input type="number" name="peso" class="input" placeholder="Exemplo: 75" id="peso">
+            <input type="number" name="peso"  id="peso" class="input" placeholder="Exemplo: 75">
             </div >
             
-            <input type="submit" id="botao" value="Calcular">
+            <!--O input de reset ja limpa automaticamente-->
+            <div class="input">
+                <input type="submit" class="botao" value="Calcular">
+                <input type="reset" id="limpar" value="Limpar"  class="botao">
+            </div>
     
             <p class="p" id="res" >
-              Aqui aparecera o seu resultado
+               
             </p>
+            
         </form>
 
     </main>
 
-    <!--footer-->
        <br>
-        <h1 class="h1">Como calcular o IMC
-        </h1>
-        <p class="p">
-            O IMC é calculado dividindo o peso (em kg) pela altura ao quadrado (em m), de acordo com a seguinte fórmula: IMC = peso / (altura x altura).
-O resultado de IMC é dado em kg/m2.
-        </p>
 
+        <footer>
+            <h1 class="h1">Como calcular o IMC
+            </h1>
+            <p class="p">
+                O IMC é calculado dividindo o peso (em kg) pela altura ao quadrado (em m), de acordo com a seguinte fórmula: IMC = peso / (altura x altura).
+            O resultado de IMC é dado em kg/m2.
+            </p>
+            
+        </footer>
         <script src="novoScript.js"></script>
 </body>
 
